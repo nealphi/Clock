@@ -1,0 +1,120 @@
+body {
+    height: 800px;
+    background-color: #282828;
+margin: 0;
+display: flex;
+flex: 1;
+align-items: center;
+}
+.clock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+width: 500px;
+height: 500px;
+padding: 10px;
+border: 12px solid rgb(70, 144, 150);
+box-shadow:-9px 6px 10px rgb(0 0 0 / 35%), 
+inset 8px 1px 10px rgb(0 0 0 / 50%), 
+inset -7px -1px 10px rgb(70 144 150 / 50%),
+4px 5px 10px rgb(70 144 150 / 30%);
+border-radius: 50%;
+margin: 50px auto;
+}
+
+.symbols {
+    
+    color: white;
+    font-size: 18px;
+   position: absolute;
+  text-align: center;
+      width: 30px;
+    height: 550px;
+    background-color: transparent;
+}
+
+.dots {
+    font-size: 18px;
+}
+
+#center {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: turquoise;
+    border-radius: 50%;
+}
+
+#center2 {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: rgb(64, 80, 224);
+    border-radius: 50%;
+    z-index: 5;
+}
+
+#center3 {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color:  #ee1a1a;
+    border-radius: 50%;
+    z-index: 9;
+}
+
+.hand { 
+    position: absolute;
+    top: 400px;
+    transform: rotateZ(180deg);
+    transform-origin: top;
+    border-radius: 5px;
+}
+
+ .hour-hand {
+    height: 150px;
+    background-color: rgb(69, 182, 176);
+    width: 10px;
+    z-index: 3;
+  }
+  
+ .min-hand {
+    height: 200px;
+    z-index: 7;
+    width: 7px;
+    background-color:rgb(64, 80, 224);
+  }
+  
+.second-hand {
+    background: #ee1a1a;
+    width: 2px;
+    height: 245px;
+    z-index: 5;
+  }
+
+  #digital {
+      position: absolute;
+      top: 550px;
+      left: 50px;
+      display: flex;
+      flex-wrap: 3;  
+  }
+
+  .digital {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 5px;
+  }
+
+  #settime {
+
+    position: absolute;
+    top: 450px;
+    left: 50px;
+  }
